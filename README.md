@@ -176,26 +176,3 @@ The workflow is intentionally simple and production-friendly:
 3. **editor**
    - improves clarity, consistency, actionability, and final format
 
-## Production Notes
-
-This repo is a strong starter, not a finished enterprise platform. Before going live, add:
-- authentication and per-user tenancy
-- rate limiting
-- observability (OpenTelemetry, LangSmith, structured log sinks)
-- background workers for long-running jobs
-- persistent Redis cache instead of local file cache
-- document upload pipeline for PDFs, DOCX, HTML, and web crawling
-- stronger prompt evaluation and guardrails
-
-## Suggested Next Steps
-
-- add streaming responses with SSE or WebSockets
-- add citations grouped by retrieved chunks
-- add report history tied to authenticated users
-- add export to PDF/DOCX
-- replace local cache with Redis
-- add Postgres for audit/history
-
-## License
-
-MIT
